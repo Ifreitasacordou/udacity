@@ -123,7 +123,7 @@ def count_gender(data_list):
           Retorna:
               Uma lista com dois valores:
                   Female - Inteiro contendo a quantidade do gênero feminino.
-                  Male - Inteiro contendo a quantidade do gênero feminino.
+                  Male - Inteiro contendo a quantidade do gênero masculino.
 
     """
     male = 0
@@ -339,11 +339,7 @@ input("Aperte Enter para continuar...")
 # TAREFA 10
 # Gênero é fácil porque nós temos apenas algumas opções. E quanto a start_stations? Quantas opções ele tem?
 # TODO: Verifique quantos tipos de start_stations nós temos, usando set()
-user_types = set()
-
-for station in data_list:
-    user_types.add(station[3])
-
+user_types = set(column_to_list(data_list, 3))
 
 print("\nTAREFA 10: Imprimindo as start stations:")
 print(len(user_types))
