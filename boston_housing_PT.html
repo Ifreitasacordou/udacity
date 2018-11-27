@@ -13867,10 +13867,10 @@ Profundidade máxima escolhida: 10</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Resposta: </strong></p>
 <ul>
-<li>O k-fold divide o dataset em k partes(subconjuntos) denominados fold e utiliza um desse fold como dados de treino e o restante como teste, realizando este processo para as k partes e para cada parte utilizado utiliza-se a mesma métrica para avaliação do modelo. Ao final do teste / treino de todas as partes é feito a média entre todas as métricas geradas por cada k parte.</li>
+<li>O k-fold divide o dataset em k pedaços depois e treina o modelo em k vezes, cada vez usando um pedaço diferente como conjunto de teste e o restante como conjunto de treinamento e depois é retirado a média para ter o modelo final.</li>
 </ul>
 <ul>
-<li>O benefício para busca em matriz é o fato do k-fold fornecer diferentes conjuntos de dados e não deixar de lado os dados de teste .</li>
+<li>O benefício para busca em matriz é que o k-fold evita a perca de dados melhorando assim a predição do melhor parâmetro aser utilizado encontrado pela bsuca em matriz.</li>
 </ul>
 
 </div>
@@ -14117,6 +14117,7 @@ Preço estimado para a casa do cliente 3: $931,636.36
 <p>Preço estimado para a casa do cliente 1: $\$$ 403,025.00</p>
 <p>Preço estimado para a casa do cliente 2: $\$$ 237,478.72</p>
 <p>Preço estimado para a casa do cliente 3: $\$$ 931,636.36</p>
+<p>O Preço médio estimado na parte do explorando dados foi de: $454,342.94 e o cliente 1 tem seu imóvel próximo a média dos valores das casas, já o cliente 2 mora em uma casa menor e onde o índice de pobreza da vizinhança é mais alto o que justifica o preço do imóvel ser mais baixo e o cliente 3 o valor do seu imóvel é justificado pelo fato de não ter uma vizinhaça com índice de pobreza alto, por sua casa ser maior e a razão de professor / aluno ser menor nas escolas próximas a sua residência, então ao meu ponto de vista faz sentido a predição dos valores gerados pelo model.</p>
 
 </div>
 </div>
